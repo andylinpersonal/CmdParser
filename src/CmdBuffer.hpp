@@ -72,6 +72,11 @@ class CmdBufferObject
     void setEndChar(uint8_t end) { m_endChar = end; }
 
     /**
+     * Get current end character.
+     */
+    uint8_t getEndChar() const noexcept { return m_endChar; }
+
+    /**
      * Set a ASCII character for serial cmd backspace.
      * Default value is BS.
      *
