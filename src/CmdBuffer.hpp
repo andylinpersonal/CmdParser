@@ -84,11 +84,21 @@ class CmdBufferObject
     void setBackChar(uint8_t backspace) { m_bsChar = backspace; }
 
     /**
+     * Get current backspace character.
+     */
+    uint8_t getBackChar() const noexcept { return m_bsChar; }
+
+    /**
      * Set echo serial on (true) or off (false)
      *
      * @param echo      bool
      */
     void setEcho(bool echo) { m_echo = echo; }
+
+    /**
+     * Get current echo setting.
+     */
+    bool getEcho() const noexcept { return m_echo; }
 
     /**
      * Cast Buffer to c string.
