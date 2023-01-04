@@ -150,6 +150,8 @@ template <size_t BUFFERSIZE>
 class CmdBuffer : public CmdBufferObject
 {
   public:
+    static const size_t bufsiz = BUFFERSIZE;
+
     /**
      * Cleanup Buffers
      */
